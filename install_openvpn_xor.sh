@@ -30,7 +30,7 @@ echo "[6/7] Готово."
 
 # Спрашиваем у пользователя запускать ли openvpn-install.sh еще раз
 while true; do
-    read -rp "Запустить bash openvpn-install.sh ещё раз? (y/n): " yn
+    read -rp "Для создания нового клиента нужна перезагрузка bash openvpn-install.sh ещё раз? (y/n): " yn
     case $yn in
         [Yy]* ) ./openvpn-install.sh; break;;
         [Nn]* ) echo "Выход."; exit 0;;
